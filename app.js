@@ -47,19 +47,19 @@
         }
     }
 
-    function calculateOperatorAndNumbers(operator, number1, number2) {
+    function calculateOperatorAndNumbers(useOperator,useNumber1,useNumber2) {
         let calcResult;
-        if (operator === '+') {
-            calcResult = number1 + number2;
+        if (useOperator === '+') {
+            calcResult = useNumber1 + useNumber2;
             alert(calcResult);
-        } else if (operator === '-') {
-            calcResult = number1 - number2;
+        } else if (useOperator === '-') {
+            calcResult = useNumber1 - useNumber2;
             alert(calcResult);
-        } else if (operator === '/') {
-            calcResult = number1 / number2;
+        } else if (useOperator === '/') {
+            calcResult = useNumber1 / useNumber2;
             Number.isNaN(calcResult) ? alert('0 на 0 делить нельзя!') : alert(calcResult);
-        } else if (operator === '*') {
-            calcResult = number1 * number2;
+        } else if (useOperator === '*') {
+            calcResult = useNumber1 * useNumber2;
             alert(calcResult);
         }
     }
