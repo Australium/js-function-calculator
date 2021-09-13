@@ -19,7 +19,6 @@
         return;
     }
     let result = calculateOperatorAndNumbers(operator, number1, number2);
-    Number.isNaN(result) ? alert('0 на 0 делить нельзя!') : alert(result);
 
     function askForOperator(message) {
         let getOperator = prompt(message);
@@ -49,14 +48,19 @@
     }
 
     function calculateOperatorAndNumbers(operator, number1, number2) {
+        let calcResult;
         if (operator === '+') {
-            return number1 + number2;
+            calcResult = number1 + number2;
+            alert(calcResult);
         } else if (operator === '-') {
-            return number1 - number2;
+            calcResult = number1 - number2;
+            alert(calcResult);
         } else if (operator === '/') {
-            return number1 / number2;
+            calcResult = number1 / number2;
+            Number.isNaN(calcResult) ? alert('0 на 0 делить нельзя!') : alert(calcResult);
         } else if (operator === '*') {
-            return number1 * number2;
+            calcResult = number1 * number2;
+            alert(calcResult);
         }
     }
 }());
