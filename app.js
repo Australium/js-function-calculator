@@ -19,7 +19,7 @@
         return;
     }
     let result = calculateOperatorAndNumbers(operator, number1, number2);
-    alert(result);
+    Number.isNaN(result) ? alert('0 на 0 делить нельзя!') : alert(result);
 
     function askForOperator(message) {
         let getOperator = prompt(message);
